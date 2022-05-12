@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.my-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #212529;
+  color: #82989a;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my-header .my-nav-bar {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.my-header .my-nav-bar .my-logo {
+  color: white;
+  cursor: pointer;
+}
+
+.my-header .my-nav-bar .my-nav-list {
+  margin: auto 0;
+  max-width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+.my-header .my-nav-bar .my-nav-list .my-lists {
+  margin-right: 25px;
+}
+
+.my-header .my-nav-bar .my-nav-list li {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.my-header .my-nav-bar .my-nav-list li:hover {
+  color: white;
+}
+
+.my-header .container {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.my-header .container .right {
+  padding: 0;
+}
+
+.my-header .container .my-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.my-main {
+  padding-top: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #82989a;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my-main .my-icon {
+  margin-left: 5%;
+  font-size: 250%;
+  color: lime;
+}
+
+.my-main .card {
+  border: none;
+}
+
+.my-main .centered-p {
+  width: 45%;
+  text-align: center;
+  font-size: 25px;
+}
+/*# sourceMappingURL=style.css.map */

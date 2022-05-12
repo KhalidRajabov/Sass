@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.my-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(33,37,41);
+
+  color: rgb(130, 152, 154);
+  justify-content: center;
+  align-items: center;
+  .my-nav-bar {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .my-logo {
+      color: white;
+      cursor: pointer;
+    }
+    .my-nav-list {
+      margin: auto 0;
+      max-width: 50%;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      .my-lists {
+        margin-right: 25px;
+      }
+      li {
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      li:hover {
+        color: white;
+      }
+    }
+  }
+  .container{
+      margin-top: 100px;
+      display: flex;
+      padding-bottom: 50px;
+      .right{
+          padding: 0;
+      }
+        .my-button:hover{
+            background-color: white;
+            color: black;
+        }
+  }
+}
+.my-main{
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  color: rgb(130, 152, 154);
+  justify-content: center;
+  align-items: center;
+  .my-icon{
+    margin-left: 5%;
+    font-size: 250%;
+    color: lime;
+  }
+  .card{
+    border: none;
+  }
+  .centered-p{
+    width: 45%;
+    text-align: center;
+    font-size: 25px;
+  }
+}
