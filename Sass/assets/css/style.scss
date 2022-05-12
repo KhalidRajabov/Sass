@@ -74,5 +74,27 @@
     width: 45%;
     text-align: center;
     font-size: 25px;
+    font-weight: 400;
+    color: black;
   }
+  .centered-author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 120%;
+    img{
+      border-radius: 50%;
+      width: 10%;
+      margin: auto;
+      padding: 0; 
+    }
+    .author{
+      font-weight: 700;
+      margin: auto
+    }
+  }
+}
+.make-this-col{
+  padding-top: 200px;
+  flex-direction: column
 }
