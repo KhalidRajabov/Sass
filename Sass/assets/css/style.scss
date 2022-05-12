@@ -2,12 +2,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: 0.3s;
 }
 .my-header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: rgb(33,37,41);
+  background-color: rgb(33, 37, 41);
 
   color: rgb(130, 152, 154);
   justify-content: center;
@@ -41,20 +42,25 @@
       }
     }
   }
-  .container{
-      margin-top: 100px;
-      display: flex;
-      padding-bottom: 50px;
-      .right{
-          padding: 0;
-      }
-        .my-button:hover{
-            background-color: white;
-            color: black;
+  .container {
+    margin-top: 100px;
+    display: flex;
+    padding-bottom: 50px;
+    .left {
+      .my-button {
+        margin-left: 25px;
+        &:hover {
+          background-color: white !important;
+          color: black !important;
         }
+      }
+    }
+    .right {
+      padding: 0;
+    }
   }
 }
-.my-main{
+.my-main {
   padding-top: 100px;
   width: 100%;
   display: flex;
@@ -62,39 +68,94 @@
   color: rgb(130, 152, 154);
   justify-content: center;
   align-items: center;
-  .my-icon{
+  .my-icon {
     margin-left: 5%;
     font-size: 250%;
     color: lime;
   }
-  .card{
+  .card {
     border: none;
   }
-  .centered-p{
+  .centered-p {
     width: 45%;
     text-align: center;
     font-size: 25px;
     font-weight: 400;
     color: black;
   }
-  .centered-author{
+  .centered-author {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 120%;
-    img{
+    img {
       border-radius: 50%;
       width: 10%;
       margin: auto;
-      padding: 0; 
+      padding: 0;
     }
-    .author{
+    .author {
       font-weight: 700;
       margin: auto;
     }
   }
 }
-.make-this-col{
+.make-this-col {
   padding-top: 200px;
   flex-direction: column;
+}
+.my-section {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  .col {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  }
+  .card{
+    cursor: pointer;
+  }
+  .news{
+    width: 20%;
+    color: white;
+    border-radius: 15px;
+    margin: 15px 0;
+    a{
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+  }
+  p {
+    height: 100px;
+  }
+
+  .card-footer {
+    margin-left: -25px;
+  }
+}
+.my-products{
+  .pr-content{
+    border-radius: 1px;
+    padding: 30px 30px;
+  }
+  .btn{
+    margin-left: -18px;
+  }
+  .form-text{
+    width: 100%;
+    font-size: 75%;
+  }
+}
+footer{
+  margin-top: 100px;
+  padding: 15px 0;
+  .end{
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    li{
+      padding: 10px;
+    }
+  }
 }

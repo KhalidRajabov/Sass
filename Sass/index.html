@@ -21,14 +21,20 @@
                      <li class="my-lists">Pricing</li>
                      <li class="my-lists">FAQ</li>
                      <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Blog</a>
+                      <a class="nav-link dropdown-toggle text-decoration-none " style="color: rgb(130, 152, 154);" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Blog</a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Blog Home</a></li>
                         <li><a class="dropdown-item" href="#"> Blog Post</a></li>
                         
                       </ul>
                     </li>
-                     <li >Portfolio</li>
+                     <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-decoration-none " style="color: rgb(130, 152, 154);" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Portfolio</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Portfolio Overwiev</a></li>
+                        <li><a class="dropdown-item" href="#">Portfolio Item</a></li>
+                      </ul>
+                    </li>
                  </ul>
         </nav>
 
@@ -40,7 +46,7 @@
                     </h1>
                       <p class="card-text">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit!</p>
                       <a href="#" class="btn btn-primary">Go somewhere</a>
-                      <a href="#" class="my-button btn btn-light border-light bg-dark  text-light">Learn More</a>
+                      <a href="#" class="my-button btn btn-light border-light bg-dark text-light">Learn More</a>
                     </div>
                   </div>
             </div>
@@ -107,33 +113,70 @@
           <p class="author text-dark">Tom Ato <span style="color:rgb(13,110,253);">/</span> CEO, Pomodoro</p>
         </div>
     </div>
-<section class="col-10 offset-1">
 
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
+<section class="my-section col-10 offset-1">
+
+  <div class="row justify-content-between">
+    <div class="col-4">
       <div class="card">
         <img src="assets/images/light.png" class="card-img-top" alt="...">
         <div class="card-body">
+          <div class="news bg-primary d-flex justify-content-center"><a href="">News</a></div>
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+            <div class="d-flex align-items-end justify-content-between">
+                <div class="d-flex align-items-center">
+                    <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="...">
+                    <div class="small">
+                        <div class="fw-bold">Kelly Rowan</div>
+                        <div class="text-muted">March 12, 2022 · 6 min read</div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col-4">
       <div class="card">
         <img src="assets/images/medium.png" class="card-img-top" alt="...">
         <div class="card-body">
+          <div class="news bg-primary d-flex justify-content-center"><a href="">Media</a></div>
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+            <div class="d-flex align-items-end justify-content-between">
+                <div class="d-flex align-items-center">
+                    <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="...">
+                    <div class="small">
+                        <div class="fw-bold">Kelly Rowan</div>
+                        <div class="text-muted">March 12, 2022 · 6 min read</div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col-4">
       <div class="card">
         <img src="assets/images/dark.png" class="card-img-top" alt="...">
         <div class="card-body">
+          <div class="news bg-primary d-flex justify-content-center"><a href="">News</a></div>
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+            <div class="d-flex align-items-end justify-content-between">
+                <div class="d-flex align-items-center">
+                    <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="...">
+                    <div class="small">
+                        <div class="fw-bold">Kelly Rowan</div>
+                        <div class="text-muted">March 12, 2022 · 6 min read</div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
       </div>
     </div>
@@ -142,7 +185,48 @@
 
 </section> 
 
+<section class="my-products container-fluid  d-flex col-12 justify-content-center align-items-center text-white">
+  <div class="col-10 pr-content d-flex bg-primary justify-content-between">
+      <div class="my-prdct-title">
+        <h1 class="new-prdcts">
+          New products, delivered to you.</h1>
+          <p class="prdct-info">Sign up for our newsletter for the latest updates.
+          </p>
+      </div>
+      <div class="form-side">
+        <form class="row g-3 ">
+          <div class="col-auto">
+            <label for="inputPassword2" class="visually-hidden">Password</label>
+            <input type="email" class="form-control" id="inputPassword2" placeholder="Email">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-white mb-3 text-white border-white">Sign up</button>
+          </div>
+        </form>
+        <div class="form-text">
+          <p class="f-text text-white">We care about privacy, and will never share your data.
+          </p>
+        </div>
+      </div>
+      
+  </div>
+</section>
 
+
+<footer class="container-fluid col-12 bg-dark d-flex justify-content-center align-items-center">
+  <div class="copy last-row col-10 d-flex justify-content-between align-items-center d-flex justify-content-between">
+      <p class="web text-white">
+        Copyright © Your Website 2022
+      </p>
+      <ul class="end text-white list-unstyled d-flex text-decoration-none">
+        <li><a href="">Privacy</a></li>
+        <li><a href="">Terms</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+  
+  
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

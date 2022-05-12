@@ -3,6 +3,8 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .my-header {
@@ -84,13 +86,17 @@
   padding-bottom: 50px;
 }
 
-.my-header .container .right {
-  padding: 0;
+.my-header .container .left .my-button {
+  margin-left: 25px;
 }
 
-.my-header .container .my-button:hover {
-  background-color: white;
-  color: black;
+.my-header .container .left .my-button:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+.my-header .container .right {
+  padding: 0;
 }
 
 .my-main {
@@ -162,5 +168,68 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.my-section {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.my-section .col {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.my-section .card {
+  cursor: pointer;
+}
+
+.my-section .news {
+  width: 20%;
+  color: white;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+.my-section .news a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.my-section p {
+  height: 100px;
+}
+
+.my-section .card-footer {
+  margin-left: -25px;
+}
+
+.my-products .pr-content {
+  border-radius: 1px;
+  padding: 30px 30px;
+}
+
+.my-products .btn {
+  margin-left: -18px;
+}
+
+.my-products .form-text {
+  width: 100%;
+  font-size: 75%;
+}
+
+footer {
+  margin-top: 100px;
+  padding: 15px 0;
+}
+
+footer .end a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .end li {
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
